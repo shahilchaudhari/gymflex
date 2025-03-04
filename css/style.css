@@ -1,0 +1,357 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 100;
+}
+
+.announcement {
+    background-color:hsl(217 91% 60%);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.announcement a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    /* position: sticky; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.97); /* bg-black/80 */
+    backdrop-filter: blur(10px); /* backdrop-blur-sm */
+    border-bottom: 1px solid #1f2937; /* border-b border-gray-800 */
+    
+}
+
+.navbar h3 {
+    color: white;
+    font-size: larger;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    margin-top: 25px;
+    height: 100vh;
+    
+}
+
+.text {
+    flex: 1;
+    padding-right: 20px;
+    margin: 30px;
+    width: 50vw;
+    animation: slide-right 1s ease-out forwards;
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.text h1 {
+    font-family: 'popins', sans-serif;
+    line-height: 1;
+    font-weight: bold;
+    color: hsl(217 91% 60%);
+    font-size: 45px;
+    margin-bottom: 20px;
+    /* font-weight: 700; */
+    font-size: 65px;
+}
+
+.typing-animation {
+    display: inline;
+    color: white;
+    font-size: 55px;
+    /* font-weight: 800; */
+}
+
+.typing-animation .typing-animation-text {
+    display: block;
+}
+
+.cursor {
+    display: inline;
+    animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+.text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.text button {
+    background-color: hsl(217 91% 60%);
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+;
+}
+
+.text button:hover {
+    background-color: white;
+    color: hsl(217 91% 60%);
+}
+
+.image {
+    flex: 1;
+    animation: slide-left 1s ease-out forwards;
+}
+
+
+@keyframes slide-left {
+    from {
+        transform: translateX(+50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.image img {
+    max-width: 100%;
+    height: 70vh;
+    border-radius: 10px;
+}
+
+
+/* training type */
+
+.training {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: hsl(240 3.7% 15.9%);
+}
+
+.training-h2{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'popins', sans-serif;
+    line-height: 1;
+    font-weight: bold;
+    /* margin-bottom: 20px; */
+}
+
+
+
+.button-container {
+    text-align: center;
+    margin: 10px 0;
+    /* margin-bottom: 1px; */
+}
+
+.tab-button {
+    padding: 10px 20px;
+    margin: 0 60px;
+    border: 2px solid hsl(240 3.7% 15.9%);
+    border-radius: 5px;
+    background-color:hsl(217 91% 60%);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.tab-button.active {
+    background-color: black;
+    color: white;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    display: none;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    /* max-width: 600px; */
+    animation: slide-up 0.5s ease-in forwards;
+    height: 60vh;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.card.active {
+    display: flex;
+}
+
+.card img {
+    width: 50%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+    font-size: 20px;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.card-text h2 {
+    margin-top: 0;
+    color: white;
+    font-size: 30px;
+    font-family: 'popins', sans-serif;
+    font-weight: bold;
+}
+
+.card-text p {
+    font-size: 20px;
+    line-height: 1.4;
+    color: hsl(217 91% 60%);
+    /* text-align: justify; */
+}
+
+
+.gym-equipment {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+}
+
+.gym-equipment h2 {
+    margin-bottom: 5px;
+    color: white;
+    font-family: 'popins', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.slideshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    height: 80vh;
+    width: 100%;
+
+}
+
+.slide {
+    position: absolute;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    transform: scale(0.8);
+    border: 2px solid hsl(217 91% 60%);
+    border-radius: 10px;
+    
+}
+
+.slide img {
+    width: 270px;
+    height: 270px;
+    border-radius: 10px;
+    padding: 10px;
+    object-fit: cover;
+
+}
+
+.slide-text {
+    text-align: center;
+    margin: 0 90px 10px 90px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    color: white;
+    transition: opacity 0.8s ease-in-out;
+    /* border: 2px solid white; */
+    /* border-radius: 10px; */
+    /* background-color: hsl(217 91% 60%); */
+}
+
+/* Center Slide */
+.slide.center {
+    opacity: 1;
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.slide.center .slide-text {
+    opacity: 1;
+}
+
+/* Left and Right Slides */
+.slide.left, .slide.right {
+    opacity: 0.6;
+    transform: scale(0.8);
+    z-index: 1;
+}
+
+.slide.left {
+    transform: translateX(-400px) scale(0.8);
+}
+
+.slide.right {
+    transform: translateX(400px) scale(0.8);
+}
