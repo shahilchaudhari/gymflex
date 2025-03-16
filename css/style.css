@@ -981,13 +981,13 @@ nav li button svg {
     .card.active {
         display: flex; /* Show the active card */
         flex-direction: column;
-        height: 100vh;
+        height: 70vh;
     }
 
     .card img {
         width: 100%;
         /* Ensure the image takes up the full width */
-        height: 50vh;
+        height: 40vh;
         /* Maintain aspect ratio */
     }
     
@@ -996,7 +996,7 @@ nav li button svg {
         width: 100%;
         align-items: center;
         justify-content: center;
-        height: 50vh;
+        height: 30vh;
         padding: 5px;
     }
 
