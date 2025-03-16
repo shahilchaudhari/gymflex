@@ -42,7 +42,7 @@ nav {
 nav ul {
     margin-top: 0;
     max-width: 100%;
-    max-height:30vh;
+    max-height: 30vh;
     list-style: none;
     display: flex;
     justify-content: flex-end;
@@ -67,7 +67,7 @@ nav a {
     font-weight: bolder;
 }
 
-.title{
+.title {
     font-size: 1.5rem;
 }
 
@@ -97,24 +97,32 @@ nav li button svg {
 
 /* Adjust the menu button styling */
 #menubtn {
-    background-color: transparent; /* Ensure the button background is transparent */
-    border: none; /* Remove any border */
-    padding: 5px; /* Remove padding */
-    margin: 0; /* Remove margin */
-    display: flex; /* Use flex to center the SVG */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
+    background-color: transparent;
+    /* Ensure the button background is transparent */
+    border: none;
+    /* Remove any border */
+    padding: 5px;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margin */
+    display: flex;
+    /* Use flex to center the SVG */
+    align-items: center;
+    /* Center vertically */
+    justify-content: center;
+    /* Center horizontally */
     cursor: pointer;
     transition: color 0.3s ease;
 }
 
-#menubtn:hover svg path{
+#menubtn:hover svg path {
     /* background-color: hsl(217 91% 60%); */
     stroke: white;
 }
 
 #closeMenu svg rect {
-    fill: rgba(0, 0, 0, 0.7); /* slightly transparent background */
+    fill: rgba(0, 0, 0, 0.7);
+    /* slightly transparent background */
 }
 
 .sidebar {
@@ -124,7 +132,8 @@ nav li button svg {
     height: 100vh;
     max-width: 50%;
     z-index: 999;
-    background-color: rgba(0, 0, 0, 0.7); /* slightly transparent background */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* slightly transparent background */
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
@@ -133,7 +142,7 @@ nav li button svg {
     justify-content: flex-start;
 }
 
-.sidebar li{
+.sidebar li {
     width: 100%;
 }
 
@@ -149,10 +158,11 @@ nav li button svg {
 .sidebar svg {
     width: 30px;
     height: 30px;
-}   
+}
 
 .sidebar.active {
-    display: flex; /* shows the sidebar when active */
+    display: flex;
+    /* shows the sidebar when active */
 }
 
 .contactBtn {
@@ -360,8 +370,7 @@ nav li button svg {
 
 .training {
     max-width: 100%;
-    margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 10px;
     background-color: hsl(240 3.7% 15.9%);
 }
 
@@ -369,24 +378,22 @@ nav li button svg {
     margin-top: 0;
     color: white;
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: 'popins', sans-serif;
     line-height: 1;
     font-weight: bold;
     /* margin-bottom: 20px; */
 }
 
-
-
 .button-container {
     text-align: center;
-    margin: 10px 0;
+    margin: 5px 0;
     /* margin-bottom: 1px; */
 }
 
 .tab-button {
     padding: 10px 20px;
-    margin: 0 20px;
+    margin: 0 10px;
     border: 2px solid hsl(240 3.7% 15.9%);
     border-radius: 5px;
     background-color: hsl(217 91% 60%);
@@ -412,7 +419,6 @@ nav li button svg {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 100%;
-    /* max-width: 600px; */
     animation: slide-up 0.5s ease-in forwards;
     height: 60vh;
 }
@@ -444,21 +450,20 @@ nav li button svg {
     flex-direction: column;
     padding: 20px;
     width: 50%;
-    font-size: 20px;
-    /* align-items: center; */
     justify-content: center;
 }
 
 .card-text h2 {
     margin-top: 0;
     color: white;
-    font-size: 30px;
+    font-size: 2.5rem;
     font-family: 'popins', sans-serif;
     font-weight: bold;
 }
 
 .card-text p {
-    font-size: 20px;
+    font-size: 1.5rem;
+    padding: 5px;
     line-height: 1.4;
     color: hsl(217 91% 60%);
     /* text-align: justify; */
@@ -495,9 +500,6 @@ nav li button svg {
     transition: all 1s ease-in-out;
     opacity: 0;
     transform: scale(0.8);
-    /* border: 2px solid hsl(217 91% 60%); */
-    /* border-radius: 10px; */
-    /* background-color: hsl(217 91% 60%); */
 
 }
 
@@ -519,9 +521,6 @@ nav li button svg {
     opacity: 0;
     color: white;
     transition: opacity 0.8s ease-in-out;
-    /* border: 2px solid white; */
-    /* border-radius: 10px; */
-    /* background-color: hsl(217 91% 60%); */
 }
 
 /* Center Slide */
@@ -869,7 +868,7 @@ nav li button svg {
         cursor: pointer;
         transition: transform 0.3s ease;
     }
-    
+
 
     nav {
         position: relative;
@@ -879,7 +878,8 @@ nav li button svg {
         justify-content: center;
         background-color: black;
     }
-    nav ul{
+
+    nav ul {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -892,7 +892,7 @@ nav li button svg {
     .menulist {
         display: block;
     }
-    
+
 
     .main {
         margin-top: 40px;
@@ -918,7 +918,7 @@ nav li button svg {
         /* font-weight: 700; */
         font-size: 2.9rem;
     }
-    
+
     .typing-animation {
         display: inline;
         color: white;
@@ -937,6 +937,54 @@ nav li button svg {
         height: 60vh;
     }
 
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        display: none; /* Hide all cards by default */
+        background-color: black;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 100%;
+        animation: slide-up 0.5s ease-in forwards;
+        height: 60vh;
+    }
+    
+    .card.active {
+        display: flex; /* Show the active card */
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .card img {
+        width: 100%;
+        /* Ensure the image takes up the full width */
+        height: 50vh;
+        /* Maintain aspect ratio */
+    }
+    
+    .card-text {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        padding: 5px;
+    }
+
+    .card-text h2 {
+        margin-top: 0;
+        font-size: 2rem;
+    }
+    
+    .card-text p {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+
     .training {
         padding: 20px;
     }
@@ -948,11 +996,12 @@ nav li button svg {
         overflow-x: hidden;
     }
 
-    .sidebar{
+    .sidebar {
         width: 100%;
         align-items: center;
     }
-    .sidebar ul{
+
+    .sidebar ul {
         width: 100%;
         align-items: center;
     }
