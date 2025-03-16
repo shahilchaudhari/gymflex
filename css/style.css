@@ -474,16 +474,17 @@ nav li button svg {
 
 .gym-equipment {
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     background-color: black;
 }
 
 .gym-equipment h2 {
-    margin-bottom: 5px;
     color: white;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 2.5rem;
     font-family: 'popins', sans-serif;
-    font-size: 40px;
-    font-weight: 800;
+    font-weight: bold;
 }
 
 .slideshow {
@@ -492,7 +493,7 @@ nav li button svg {
     align-items: center;
     position: relative;
     overflow: hidden;
-    height: 70vh;
+    height: 60vh;
     width: 100%;
 }
 
@@ -505,10 +506,9 @@ nav li button svg {
 }
 
 .slide img {
-    width: 230px;
-    height: 220px;
+    width: 55vh;
+    height: 40vh;
     border-radius: 10px;
-    padding: 5px;
     object-fit: cover;
 
 }
@@ -517,8 +517,7 @@ nav li button svg {
     text-align: center;
     margin: 0 90px 10px 90px;
     padding: 10px;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 1.5rem;
     opacity: 0;
     color: white;
     transition: opacity 0.8s ease-in-out;
@@ -550,7 +549,6 @@ nav li button svg {
 .slide.right {
     transform: translateX(400px) scale(0.8);
 }
-
 
 
 /* testimonial section */
@@ -965,6 +963,7 @@ nav li button svg {
     .card-container {
         flex-direction: column;
         align-items: center;
+        padding: 0.5px;
     }
 
     .card {
@@ -1048,7 +1047,7 @@ nav li button svg {
 
     .card img {
         width: 100%;
-        height: 35vh;
+        height: 30vh;
     }
     
     .card-text {
@@ -1056,7 +1055,7 @@ nav li button svg {
         width: 100%;
         align-items: center;
         justify-content: center;
-        height: 20vh;
+        height: 25vh;
         padding: 5px;
     }
 
