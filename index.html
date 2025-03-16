@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness Center</title>
+    <title>GymFlex</title>
     <link rel="stylesheet" href="/css/style.css">
     <script src="./javascript/script.js"></script>
 </head>
@@ -16,8 +16,62 @@
             Join today and get 20% off your first month! <a href="#">Join Now</a>
         </div>
 
-        <nav class="navbar">
-            <div>
+        <nav>
+            <ul class="sidebar">
+                <li id="closeMenu"><a href="#"><svg viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0">
+                                <rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="0" fill="black"
+                                    strokewidth="0"></rect>
+                            </g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"
+                                    fill="hsl(217, 91%, 60%)"></path>
+                            </g>
+                        </svg></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#equipments">Equipments</a></li>
+                <li><a href="#findus">Find Us</a></li>
+                <li><button class="contactBtn"
+                        onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Contact</button>
+                </li>
+            </ul>
+            <ul>
+                <li class="title"><a href="#">Gymflex</a></li>
+                <li class="hideOnMobile"><a href="#" >Home</a></li>
+                <li class="hideOnMobile"><a href="#plans">Plans</a></li>
+                <li class="hideOnMobile"><a href="#equipments">Equipments</a></li>
+                <li class="hideOnMobile"><a href="#findus">Find Us</a></li>
+                <li><button class="contactBtn hideOnMobile"
+                        onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Contact</button>
+                </li>
+                <li class="menulist"><button id="menubtn"><svg viewBox="-2.4 -2.4 28.80 28.80" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" stroke="hsl(217 91% 60%)">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0">
+                                <rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="0" fill="none" strokewidth="0">
+                                </rect>
+                            </g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g clip-path="url(#clip0_429_11066)">
+                                    <path d="M3 6.00092H21M3 12.0009H21M3 18.0009H21" stroke="hsl(217 91% 60%)"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_429_11066">
+                                        <rect width="24" height="24" fill="none" transform="translate(0 0.000915527)">
+                                        </rect>
+                                    </clipPath>
+                                </defs>
+                            </g>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+
+            <!-- <div>
                 <h3>Gymflex</h3>
             </div>
             <div class="menu-icon" id="menu-icon">
@@ -32,10 +86,10 @@
                 <a href="#plans">Plans</a>
                 <a href="#equipments">Equipments</a>
                 <a href="#findus">Find Us</a>
-                <!-- Contact Button -->
+             
                 <button class="contactBtn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Contact</button>
-                <!-- Popup Contact Form -->
             </div>
+         -->
         </nav>
     </header>
 

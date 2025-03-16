@@ -1,27 +1,28 @@
 
 // Wait until the DOM content is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    const menuIcon = document.getElementById('menu-icon');
-    const navLinks = document.getElementById('nav-links');
-  
-    // Toggle nav-links when hamburger is clicked
-    menuIcon.addEventListener('click', () => {
-      const isActive = navLinks.classList.toggle('active');
-      // Hide the hamburger if nav-links are active
-      menuIcon.style.opacity = isActive ? '0' : '1';
-    });
-  
-    // Collapse nav-links (and show hamburger) when any nav link is clicked
-    const mobileNavItems = navLinks.querySelectorAll('a, button');
-    mobileNavItems.forEach(item => {
-      item.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        menuIcon.style.opacity = '1';
-      });
-    });
-  });
 
-  
+document.addEventListener("DOMContentLoaded", function () {
+    const menubtn = document.getElementById('menubtn');
+    const sidebar = document.querySelector('.sidebar');
+    const closeBtn = document.getElementById('closeMenu');
+
+    // Function to toggle the sidebar
+    // Toggle the "active" class on the sidebar
+    function toggleSidebar() {
+        sidebar.classList.toggle("active");
+    }
+
+    // Function to hide the sidebar
+    function hideSidebar() {
+        sidebar.classList.remove("active");
+    }
+    // Add click event listener to the menu button
+    menubtn.addEventListener('click', toggleSidebar);
+
+    // Add click event listener to the close button
+    closeBtn.addEventListener('click', hideSidebar);
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     const typingText = document.querySelector('.typing-animation');
     const texts = ["Physique.", "Persona.", "Mind.", "Life."];
