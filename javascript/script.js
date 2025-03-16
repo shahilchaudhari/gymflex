@@ -142,10 +142,10 @@ let currentIndex = 0;
 function slide(direction) {
     const cards = document.querySelector('.feedback-cards');
     const cardCount = cards.children.length;
-    const cardsToShow = 3;
+    // Use 1 card on screens smaller than 786px, otherwise use 3 cards
+    const cardsToShow = window.innerWidth < 786 ? 1 : 3;
     const cardWidth = cards.children[0].offsetWidth;
     const maxIndex = Math.ceil(cardCount / cardsToShow) - 1;
-
     currentIndex += direction;
 
     if (currentIndex < 0) {

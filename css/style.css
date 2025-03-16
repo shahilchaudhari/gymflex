@@ -480,7 +480,7 @@ nav li button svg {
 
 .gym-equipment h2 {
     color: white;
-    margin-top: 0px;
+    margin-top: 5px;
     text-align: center;
     font-size: 2.5rem;
     font-family: 'popins', sans-serif;
@@ -516,7 +516,6 @@ nav li button svg {
 .slide-text {
     text-align: center;
     margin: 0 90px 10px 90px;
-    padding: 10px;
     font-size: 1.5rem;
     opacity: 0;
     color: white;
@@ -555,24 +554,19 @@ nav li button svg {
 
 .feedback-section {
     text-align: center;
-    padding: 20px;
+    padding-top: 1px;
     background-color: hsl(240 3.7% 15.9%);
-    height: 100vh;
+    height: 80vh;
     justify-content: center;
 }
 
 .feedback-section h2 {
     color: white;
-    font-family: 'popins', 'sans-serif';
-    font-size: 40px;
+    font-size: 2.5rem;
+    font-family: 'popins', sans-serif;
+    font-weight: bold;
 }
 
-.subtitle {
-    font-size: 1rem;
-    color: #aaa;
-    margin-bottom: 2dvb;
-    text-align: center;
-}
 
 
 .feedback-container {
@@ -595,18 +589,20 @@ nav li button svg {
     transition: transform 1s ease-out;
 }
 
-.f-card {
+
+
+.feedback-cards .f-card {
     display: flex;
     flex-direction: column;
-    flex: 0 0 33.33%;
     /* Adjust as needed */
     box-sizing: border-box;
     padding: 10px;
     align-items: center;
     color: white;
-    /* border: 2px solid grey; */
-
+    min-width: calc(100% / 3);
+    /* default: 3 cards visible */
 }
+
 
 .f-card img {
     display: flex;
@@ -659,7 +655,7 @@ nav li button svg {
 
 .findus {
     display: flex;
-    padding: 10px;
+    /* padding: 10px; */
     flex-direction: column;
     background-color: black;
     align-items: center;
@@ -671,8 +667,9 @@ nav li button svg {
 .findus h2 {
     color: white;
     font-family: 'popins', sans-serif;
-    font-size: 40px;
-    margin-bottom: 5px;
+    font-size: 2.5rem;
+    /* margin-bottom: 5px; */
+    margin-top: 10px;
     font-weight: bold;
 }
 
@@ -743,6 +740,8 @@ nav li button svg {
     font-family: 'popins', sans-serif;
     margin-bottom: 5px;
 }
+
+
 
 .findus-address p {
     font-size: 20px;
@@ -938,6 +937,7 @@ nav li button svg {
     }
 
     .training-h2 {
+        position: relative;
         margin-top: 0;
         color: white;
         text-align: center;
@@ -952,13 +952,9 @@ nav li button svg {
         font-size: 1rem;
         padding: 5px 10px;
         font-weight: bold;
-    
+
     }
-    .card.active {
-        display: flex; /* Show the active card */
-        flex-direction: column;
-        height: 70vh;
-    }
+
 
     .card-container {
         flex-direction: column;
@@ -967,18 +963,20 @@ nav li button svg {
     }
 
     .card {
-        display: none; /* Hide all cards by default */
+        display: none;
+        /* Hide all cards by default */
         background-color: black;
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         overflow: hidden;
         width: 100%;
         animation: slide-up 0.5s ease-in forwards;
-    
+        /* height: 80vh; */
     }
-    
+
     .card.active {
-        display: flex; /* Show the active card */
+        display: flex;
+        /* Show the active card */
         flex-direction: column;
         height: 80vh;
     }
@@ -987,7 +985,7 @@ nav li button svg {
         width: 100%;
         height: 50vh;
     }
-    
+
     .card-text {
         display: flex;
         width: 100%;
@@ -1001,7 +999,7 @@ nav li button svg {
         margin-top: 0;
         font-size: 1.5rem;
     }
-    
+
     .card-text p {
         margin-top: 0;
         font-size: 1rem;
@@ -1010,6 +1008,73 @@ nav li button svg {
     .training {
         padding: 20px;
     }
+
+    .feedback-section {
+        padding-top: 1px;
+        background-color: hsl(240 3.7% 15.9%);
+        height: 85vh;
+        justify-content: center;
+    }
+
+    .feedback-cards .f-card {
+        min-width: 50%;
+        /* only 2 card per view */
+    }
+
+    .findus {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        padding-top: 5px;
+        height: 120vh;
+    }
+
+    .findus-container {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        height: 150vh;
+        /* margin: 0 auto; */
+    }
+
+    .findus-loc {
+        flex: 1;
+        opacity: 0;
+        max-width: 100%;
+        transition: slide-right 1s ease-out forwards;
+        margin: 0px;
+        padding: 10px;
+        height: 70vh;
+    }
+
+    .findus-address {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        max-width: 100%;
+        transition: slide-left 1s ease-out forwards;
+        margin: 5px;
+        padding: 10px;
+        height: 60vh;
+     
+    }
+
+    .findus-address h3 {
+        display: flex;
+        align-items: center;
+    }
+    
+    .findus-address p {
+        display: flex;
+        align-items: center;
+    }
+
+
 }
 
 
@@ -1040,7 +1105,8 @@ nav li button svg {
     }
 
     .card.active {
-        display: flex; /* Show the active card */
+        display: flex;
+        /* Show the active card */
         flex-direction: column;
         height: 55vh;
     }
@@ -1049,7 +1115,7 @@ nav li button svg {
         width: 100%;
         height: 30vh;
     }
-    
+
     .card-text {
         display: flex;
         width: 100%;
@@ -1057,6 +1123,11 @@ nav li button svg {
         justify-content: center;
         height: 25vh;
         padding: 5px;
+    }
+
+    .feedback-cards .f-card {
+        min-width: 100%;
+        /* only one card per view */
     }
 
 
