@@ -1055,7 +1055,7 @@ nav li button svg {
     .feedback-section {
         padding-top: 1px;
         background-color: hsl(240 3.7% 15.9%);
-        height: 55vh;
+        height: 75vh;
         justify-content: center;
     }
 
@@ -1074,8 +1074,10 @@ nav li button svg {
         display: flex;
         flex-direction: column;
         background-color: black;
-        padding-top: 5px;
-        height: 90vh;
+        margin-top: 0;
+        padding: 10px;
+        padding-top: 0px;
+        height: 100vh;
     }
 
     .findus h2 {
@@ -1087,8 +1089,7 @@ nav li button svg {
         position: relative;
         flex-direction: column;
         width: 100%;
-        height: 90%;
-        padding: 0 30px;
+        height: 90vh;
         /* margin: 0 auto; */
     }
 
@@ -1098,9 +1099,9 @@ nav li button svg {
         max-width: 100%;
         border: none;
         transition: slide-right 1s ease-out forwards;
-        margin: 0px 10px;
+        margin: 0px;
         padding: 10px;
-        max-height: 30%;
+        max-height: 40vh;
     }
 
     .findus-address {
@@ -1112,9 +1113,9 @@ nav li button svg {
         opacity: 0;
         max-width: 100%;
         transition: slide-left 1s ease-out forwards;
-        margin: 0px 20px;
+        margin: 0px;
         padding: 10px;
-        max-height: 65%;
+        max-height: 60vh;
      
     }
 
@@ -1209,7 +1210,7 @@ nav li button svg {
     }
 
     .feedback-section{
-        height: 60vh;
+        height: 66vh;
     }
 
     .feedback-cards .f-card {
