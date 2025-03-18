@@ -171,7 +171,7 @@ nav li button svg {
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
     margin-right: 10px;
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
@@ -184,24 +184,26 @@ nav li button svg {
 
 
 .contact-section {
-    padding: 40px 20px;
+    padding: 20px 20px;
     background-color: hsl(240 3.7% 15.9%);
     text-align: center;
+
 }
 
 .contact-section h2 {
-    margin-bottom: 20px;
+    margin-top: 0px;
+    font-size: 2.5rem;
     color: white;
 }
 
 .contact-details p {
-    font-size: 18px;
+    font-size: 1.4rem;
     margin: 10px 0;
 }
 
 .contact-section form {
-    max-width: 800px;
-    margin: 20px auto 0 auto;
+    max-width: 100%;
+    /* margin: 20px auto 0 auto; */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -506,8 +508,8 @@ nav li button svg {
 }
 
 .slide img {
-    width: 55vh;
-    height: 40vh;
+    width: 50vh;
+    height: 45vh;
     border-radius: 10px;
     object-fit: cover;
 
@@ -580,6 +582,7 @@ nav li button svg {
     overflow: hidden;
     width: 80%;
     border: 2px solid black;
+    border-radius: 20px;
     padding: 10px;
     /* Adjust as needed */
 }
@@ -864,7 +867,7 @@ nav li button svg {
         border: 2px solid black;
         border-radius: 5px;
         padding: 5px 10px;
-        font-size: 16px;
+        font-size: 1rem;
         cursor: pointer;
         transition: transform 0.3s ease;
     }
@@ -936,6 +939,10 @@ nav li button svg {
         height: 60vh;
     }
 
+    .training {
+        padding: 20px;
+    }
+
     .training-h2 {
         position: relative;
         margin-top: 0;
@@ -954,7 +961,6 @@ nav li button svg {
         font-weight: bold;
 
     }
-
 
     .card-container {
         flex-direction: column;
@@ -1005,15 +1011,27 @@ nav li button svg {
         font-size: 1rem;
     }
 
-    .training {
-        padding: 20px;
+
+    .gym-equipment h2 {
+        font-size: 1.5rem;
+
     }
+
+    .slide-text {
+        font-size: 1rem;
+    }
+
 
     .feedback-section {
         padding-top: 1px;
         background-color: hsl(240 3.7% 15.9%);
-        height: 85vh;
+        height: 70vh;
         justify-content: center;
+    }
+
+    .feedback-section h2 {
+        color: white;
+        font-size: 1.5rem;
     }
 
     .feedback-cards .f-card {
@@ -1028,6 +1046,10 @@ nav li button svg {
         background-color: black;
         padding-top: 5px;
         height: 120vh;
+    }
+
+    .findus h2 {
+        font-size: 1.5rem;
     }
 
     .findus-container {
@@ -1072,6 +1094,30 @@ nav li button svg {
     .findus-address p {
         display: flex;
         align-items: center;
+    }
+
+    .foot-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+        /* justify-content: space-between; */
+        /* flex-wrap: wrap; */
+    }
+
+    .foot-col1{
+        padding: 2px;
+        margin: 0;
+        grid-column: 1 / -1;
+    }
+
+    .foot-col2,
+    .foot-col3 {
+        padding: 2px;
+        margin: 0;
+        justify-self:center;
+        /* text-align: center; */
     }
 
 
@@ -1127,6 +1173,7 @@ nav li button svg {
 
     .feedback-cards .f-card {
         min-width: 100%;
+
         /* only one card per view */
     }
 
