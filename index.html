@@ -13,7 +13,7 @@
 
     <header class="header">
         <div class="announcement">
-            Join today and get 20% off your first month! <a href="#">Join Now</a>
+            Join today and get 20% off your first month! <a href="#" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Join Now</a>
         </div>
 
         <nav>
@@ -84,9 +84,13 @@
                 <span class="typing-animation"></span><span class="cursor">|</span>
             </h1>
             <p>Join our state-of-the-art fitness facility and start your journey to a healthier, stronger you with
-                expert guidance and premium equipment.</p>
-            <button>Start Today</button>
-            <button>Learn More</button>
+                expert guidance and premium equipment.
+                <span id="moreText" class="mainTextHidden">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua now.
+                </span>
+            </p>
+            <button class="contactBtn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Start Today</button>
+            <button id="learnMoreBtn">Learn More</button>
         </div>
         <div class="image">
             <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48" alt="Fitness Image">

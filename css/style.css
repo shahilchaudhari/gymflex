@@ -273,6 +273,7 @@ nav li button svg {
     animation: slide-right 1s ease-out forwards;
 }
 
+
 @keyframes slide-right {
     from {
         transform: translateX(-50%);
@@ -320,19 +321,31 @@ nav li button svg {
 
 
 .text p {
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    line-height: 1.4;
     margin-bottom: 20px;
+    padding: 10px;
     color: white;
+    /* text-align: justify; */
+}
+
+.mainTextHidden {
+    display: none;
+}
+
+/* Visible state with smooth transition; adjust max-height as needed */
+.mainTextVisible {
+    display: inline;
+
 }
 
 .text button {
     background-color: hsl(217 91% 60%);
     color: white;
     border: 2px solid black;
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-size: 16px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
     cursor: pointer;
     margin-right: 10px;
 }
@@ -371,9 +384,14 @@ nav li button svg {
 /* training type */
 
 .training {
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
     padding-top: 10px;
     background-color: hsl(240 3.7% 15.9%);
+    justify-items: center;
+    height: 85vh;
+
 }
 
 .training-h2 {
@@ -398,10 +416,10 @@ nav li button svg {
     margin: 0 5px;
     font-size: 1.5rem;
     border: 2px solid hsl(240 3.7% 15.9%);
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: hsl(217 91% 60%);
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 
@@ -594,7 +612,6 @@ nav li button svg {
 }
 
 
-
 .feedback-cards .f-card {
     display: flex;
     flex-direction: column;
@@ -602,6 +619,7 @@ nav li button svg {
     box-sizing: border-box;
     padding: 10px;
     align-items: center;
+    justify-content: center;
     color: white;
     min-width: calc(100% / 3);
     /* default: 3 cards visible */
@@ -610,8 +628,8 @@ nav li button svg {
 
 .f-card img {
     display: flex;
-    width: 100px;
-    height: 120px;
+    width: 20vh;
+    height: 25vh;
     border-radius: 50%;
     align-items: center;
     /* justify-content: center; */
@@ -942,6 +960,7 @@ nav li button svg {
 
     .training {
         padding: 20px;
+        height: 95vh;
     }
 
     .training-h2 {
@@ -958,8 +977,8 @@ nav li button svg {
 
     .tab-button {
         font-size: 1rem;
-        padding: 5px 10px;
-        font-weight: bold;
+        padding: 7px 15px;
+        /* font-weight: bold; */
 
     }
 
@@ -1156,6 +1175,7 @@ nav li button svg {
     .training {
         max-width: 100%;
         background-color: hsl(240 3.7% 15.9%);
+        height: 70vh;
     }
 
     .card.active {

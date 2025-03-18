@@ -56,6 +56,29 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// learn more button
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const learnMoreBtn = document.getElementById('learnMoreBtn');
+    const moreText = document.getElementById('moreText');
+
+    learnMoreBtn.addEventListener('click', function () {
+        if (moreText.classList.contains('mainTextHidden')) {
+            // Remove the hidden class so the element displays inline
+            moreText.classList.remove('mainTextHidden');
+            moreText.classList.add('mainextVisible');
+            this.textContent = 'Learn Less';
+        } else {
+            // Add the hidden class to hide the element again
+            moreText.classList.remove('mainextVisible');
+            moreText.classList.add('mainTextHidden');
+            this.textContent = 'Learn More';
+        }
+    });
+});
+
+
 // contact form
 
 document.addEventListener("DOMContentLoaded", () => {
